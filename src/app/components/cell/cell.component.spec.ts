@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NineCellsComponent } from './nine-cells.component';
+import { CellComponent } from './cell.component';
 
-describe('NineCellsComponent', () => {
-  let component: NineCellsComponent;
-  let fixture: ComponentFixture<NineCellsComponent>;
+describe('CellComponent', () => {
+  let component: CellComponent;
+  let fixture: ComponentFixture<CellComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NineCellsComponent ]
+      declarations: [ CellComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NineCellsComponent);
+    fixture = TestBed.createComponent(CellComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

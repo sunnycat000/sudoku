@@ -8,6 +8,7 @@ import { PauseComponent } from './components/pause/pause.component';
 import { LargGridComponent } from './components/larg-grid/larg-grid.component';
 import { NineCellsComponent } from './components/nine-cells/nine-cells.component';
 import { OneCellComponent } from './componnets/one-cell/one-cell.component';
+import { CellComponent } from './components/cell/cell.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OneCellComponent } from './componnets/one-cell/one-cell.component';
     PauseComponent,
     LargGridComponent,
     NineCellsComponent,
-    OneCellComponent
+    OneCellComponent,
+    CellComponent
   ],
   imports: [
     BrowserModule,
