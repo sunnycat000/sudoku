@@ -1,0 +1,19 @@
+.header {
+  height: 55px;
+  border-bottom: 1px solid #959595;
+  color: #959595;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+span {
+  margin: auto 15px;
+}
+a {
+  text-decoration: none;
+  color: #959595;
+}
+a:hover {
+  color: black;
+}
