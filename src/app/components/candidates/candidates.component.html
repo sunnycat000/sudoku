@@ -1,0 +1,7 @@
+<table class="candidates">
+  <tr *ngFor="let row of row(3)">
+    <td class="candidate" *ngFor="let col of arr">
+      <app-number [number]="row * 3 + col + 1"></app-number>
+    </td>
+  </tr>
+</table>

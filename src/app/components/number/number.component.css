@@ -1,0 +1,11 @@
+span {
+  color: white;
+}
+
+span:hover {
+  color: black;
+}
+
+.active {
+  color: black;
+}

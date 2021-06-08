@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PauseComponent } from './components/pause/pause.component';
 import { LargGridComponent } from './components/larg-grid/larg-grid.component';
-import { NineCellsComponent } from './components/nine-cells/nine-cells.component';
-import { OneCellComponent } from './componnets/one-cell/one-cell.component';
 import { CellComponent } from './components/cell/cell.component';
+import { CandidatesComponent } from './components/candidates/candidates.component';
+import { NumberComponent } from './components/number/number.component';
 
 @NgModule({
   declarations: [
@@ -16,15 +16,12 @@ import { CellComponent } from './components/cell/cell.component';
     HeaderComponent,
     PauseComponent,
     LargGridComponent,
-    NineCellsComponent,
-    OneCellComponent,
-    CellComponent
+    CellComponent,
+    CandidatesComponent,
+    NumberComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

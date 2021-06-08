@@ -1,6 +1,36 @@
 .playarea {
-  height: 756px;
-  width: 756px;
+  height: 640px;
+  width: 640px;
   margin: auto;
   border: 5px solid black;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xxx-large;
+  text-align: center;
+}
+td {
+  display: table-cell;
+  border: 1px solid #959595;
+}
+
+.playarea tr:nth-child(3),
+.playarea tr:nth-child(6) {
+  border-bottom: 5px solid #959595;
+}
+
+td:nth-child(3),
+td:nth-child(6) {
+  border-right: 5px solid #959595;
+}
+.provided {
+  background-color: #e6e6e6;
+}
+.chosen {
+  background-color: yellow;
+}
+
+.top {
+  border-top: 5px solid black;
 }
