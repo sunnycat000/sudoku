@@ -1,1 +1,6 @@
-<span [class.active]="selected" (click)="toggleSelect()">{{ number }}</span>
+<span
+  [class.active]="selected"
+  [class.inactive]="!selected"
+  (click)="toggleSelect()"
+  >{{ number }}</span
+>

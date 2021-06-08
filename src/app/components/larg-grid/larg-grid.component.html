@@ -6,9 +6,8 @@
       [ngClass]="setClass(row, i)"
       (click)="onClick(cell, row, i)"
     >
-      {{ cell }}
+      <app-cell [number]="cell"></app-cell>
     </td>
   </tr>
 </table>
-
-<app-candidates></app-candidates>
+<app-cell></app-cell>

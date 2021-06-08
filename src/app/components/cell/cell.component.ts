@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cell',
   templateUrl: './cell.component.html',
-  styleUrls: ['./cell.component.css']
+  styleUrls: ['./cell.component.css'],
 })
 export class CellComponent implements OnInit {
+  @Input() number: string;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

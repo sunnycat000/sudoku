@@ -2,10 +2,12 @@ span {
   color: white;
 }
 
-span:hover {
-  color: black;
+.inactive:hover {
+  color: #f3a6a6;
+  transition: 0.3s ease-out;
 }
 
-.active {
-  color: black;
+.active,
+active:hover {
+  color: #959595;
 }
