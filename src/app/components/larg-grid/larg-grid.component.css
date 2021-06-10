@@ -1,8 +1,8 @@
-.playarea {
-  height: 640px;
-  width: 640px;
+.board {
+  width: 580px;
+  height: 580px;
   margin: auto;
-  border: 5px solid black;
+  border: 5px solid #959595;
   table-layout: fixed;
   border-collapse: collapse;
   border-spacing: 0;
@@ -27,10 +27,16 @@ td:nth-child(6) {
 .provided {
   background-color: #e6e6e6;
 }
-.chosen {
+.active {
   background-color: yellow;
 }
-
-.top {
-  border-top: 5px solid black;
+input {
+  background: transparent;
+  border: black solid 1px;
+  width: 100%;
+  height: 100%;
+  color: black;
 }
+/* .top {
+  border-top: 5px solid black;
+} */

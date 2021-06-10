@@ -7,7 +7,8 @@ import { BoardService } from '../../services/board.service';
 })
 export class LargGridComponent implements OnInit {
   chosen: boolean = false;
-  selected: boolean = false;
+  active: boolean = false;
+  selectedId: number;
   constructor(private boardService: BoardService) {}
 
   ngOnInit(): void {}
@@ -48,9 +49,11 @@ export class LargGridComponent implements OnInit {
     return className;
   }
 
-  onClick(cell: number, row: number, i: number) {
-    if (!cell) {
-      this.selected = true;
+  onClick(cell: string, row: number, i: number) {
+    if (cell === ' ') {
+      this.selectedId = row * 9 + i;
+      this.active = true;
+      // document.getElementById(this.selectedId + '').focus();
     }
   }
 }

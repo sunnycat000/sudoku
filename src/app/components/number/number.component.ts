@@ -13,6 +13,6 @@ export class NumberComponent implements OnInit {
   ngOnInit(): void {}
   toggleSelect() {
     this.selected = !this.selected;
-    console.log(this.selected);
+    // console.log(this.selected);
   }
 }

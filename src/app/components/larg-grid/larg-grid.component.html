@@ -1,12 +1,23 @@
-<table class="playarea">
+<table class="board">
   <tr *ngFor="let row of row(9)">
     <td
+      [id]="row * 9 + i"
       *ngFor="let cell of cells(row); let i = index"
       class="{{ cell === ' ' ? 'fill' : 'provided' }}"
       [ngClass]="setClass(row, i)"
+      [class.active]="selectedId === row * 9 + i"
       (click)="onClick(cell, row, i)"
     >
-      <app-cell [number]="cell"></app-cell>
+      <input
+        [id]="row * 9 + i"
+        type="text"
+        *ngIf="selectedId === row * 9 + i"
+      />
+      <app-cell
+        *ngIf="selecedId !== row * 9 + i"
+        [number]="cell"
+        [id]="row * 9 + i"
+      ></app-cell>
     </td>
   </tr>
 </table>
